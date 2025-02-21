@@ -1,0 +1,3 @@
+repo,alias,requires
+roc-lang/basic-cli,cli,"main!"
+roc-lang/basic-webserver,web,"main!"
