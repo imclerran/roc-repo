@@ -1,3 +1,5 @@
 repo,alias,requires
+lukewilliamboswell/basic-ssg,ssg,"main!"
+ostcar/kingfisher,webserver,"init_model, update_model, handle_request!, Model"
 roc-lang/basic-cli,cli,"main!"
 roc-lang/basic-webserver,web,"main!"
