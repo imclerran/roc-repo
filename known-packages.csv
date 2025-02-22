@@ -8,3 +8,5 @@ imclerran/rtils,rtils
 imclerran/roc-utf16,utf16
 lukewilliamboswell/roc-ansi,ansi
 lukewilliamboswell/roc-json,json
+smores56/roc-semver,semver
+imclerran/roc-semver,semver
