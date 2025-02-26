@@ -4,15 +4,18 @@ Scripts are used for generating platform code.
 ## Requirements
 __Path__:
 - Located at `scripts/<owner>/<repo>/`
+
 __Naming__:
 - Name must exactly match a release tag for the package or platform, followed by `.sh`.
     - IE: `0.12.3.sh`, or `v0.0.0-alpha1.sh`.
+
 __Arguments__:
 - The script should take the following arguments:
     1) The file name
     2) The platform alias
     3) The platform url
     4) Zero or more pairs of package alias and url arguments
+
 __Script availability__:
 - roc-start will always use the script with the highest version which is less than or equal to the target platform version.
 - If no scripts are available for a platform, roc-start will default to a basic template which only includes the app header, and no additional code.
