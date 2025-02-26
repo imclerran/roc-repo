@@ -38,19 +38,19 @@ for ((i=0; i<${#package_aliases[@]}; i++)); do
 done
 
 # Add the closing part
-cat >> "$file_name" << EOL
+cat >> "$file_name" << 'EOL'
 }
 
 import ${platform_alias}.Stdout
 import ${platform_alias}.Http exposing [Request, Response]
 import ${platform_alias}.Utc
 
-# Model is produced by `init`.
+# Model is produced by \`init\`.
 Model : {}
 
-# With `init` you can set up a database connection once at server startup,
-# generate css by running `tailwindcss`,...
-# In this case we don't have anything to initialize, so it is just `Ok({})`.
+# With \`init\` you can set up a database connection once at server startup,
+# generate css by running \`tailwindcss\`,...
+# In this case we don't have anything to initialize, so it is just \`Ok({})\`.
 init! : {} => Result Model []
 init! = |{}| Ok({})
 
@@ -59,13 +59,13 @@ respond! = |req, _|
     # Log request datetime, method and url
     datetime = Utc.to_iso_8601(Utc.now!({}))
 
-    Stdout.line!("${datetime} ${Inspect.to_str(req.method)} ${req.uri}")?
+    "\$\{datetime\} \$\{Inspect.to_str(req.method)\} \$\{req.uri\}" |> Stdout.line!?
 
     Ok(
         {
             status: 200,
             headers: [],
-            body: Str.to_utf8("<b>Hello from server</b></br>"),
+            body: "<b>Hello from server</b></br>" |> Str.to_utf8,
         },
     )
 
