@@ -1,0 +1,28 @@
+name: Check and Test Package
+on: 
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+# this cancels workflows currently in progress if you start a new one
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  build-and-test:
+    runs-on: [ubuntu-20.04]
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Install Roc
+        uses: hasnep/setup-roc@v0.5.0
+        with:
+          roc-version: alpha3-rolling
+      - name: Validate CSV files
+        run: roc validate.roc
