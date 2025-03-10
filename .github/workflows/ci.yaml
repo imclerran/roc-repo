@@ -25,4 +25,4 @@ jobs:
         with:
           roc-version: alpha3-rolling
       - name: Validate CSV files
-        run: roc validate.roc
+        run: roc ci/validate.roc
