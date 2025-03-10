@@ -1,5 +1,5 @@
-repo,alias
-lukewilliamboswell/basic-ssg,ssg
-ostcar/kingfisher,webserver
-roc-lang/basic-cli,cli
-roc-lang/basic-webserver,web
+repo,alias,remote
+lukewilliamboswell/basic-ssg,ssg,github
+ostcar/kingfisher,webserver,github
+roc-lang/basic-cli,cli,github
+roc-lang/basic-webserver,web,github
