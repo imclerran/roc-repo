@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 # Ensure at least three arguments (filename + one pair)
-if (( $# < 3 )) || (( ($# - 1) % 2 != 0 )); then
+if [ $# -lt 3 ] || [ $(($# - 1)) -lt 2 ] || [ $(($# - 1)) -gt 0 -a $(($# - 1)) -lt 2 ] || [ $((($# - 1) % 2)) -ne 0 ]; then
     echo "Usage: $0 file_name platform_alias platform_url [package_alias1 package_url1 ...]"
     exit 1
 fi
@@ -15,26 +15,18 @@ platform_alias="$1"
 platform_url="$2"
 shift 2
 
-# Arrays for packages
-declare -a package_aliases=()
-declare -a package_urls=()
-
-# Process remaining arguments in pairs
-while (( $# )); do
-    package_aliases+=("$1")
-    package_urls+=("$2")
-    shift 2
-done
-
 # Generate the file
 cat > "$file_name" << EOL
 app [init_model, update_model, handle_request!, Model] { 
     ${platform_alias}: platform "${platform_url}",
 EOL
 
-# Add package entries
-for ((i=0; i<${#package_aliases[@]}; i++)); do
-    echo "    ${package_aliases[i]}: \"${package_urls[i]}\"," >> "$file_name"
+# Process remaining arguments in pairs and add package entries
+while [ $# -gt 0 ]; do
+    package_alias="$1"
+    package_url="$2"
+    echo "    ${package_alias}: \"${package_url}\"," >> "$file_name"
+    shift 2
 done
 
 # Add the closing part
