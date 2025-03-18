@@ -35,6 +35,7 @@ lukewilliamboswell/roc-parser,parser,github
 lukewilliamboswell/roc-random,random,github
 mulias/roc-array2d,a2d,github
 phagenlocher/roc-color,color,github
+roc-lang/unicode,unicode,github
 shritesh/roc-image,img,github
 smores56/roc-query,qry,github
 smores56/roc-semver,semver,github
