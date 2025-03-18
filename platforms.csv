@@ -1,5 +1,6 @@
 repo,alias,remote
 lukewilliamboswell/basic-ssg,ssg,github
+lukewilliamboswell/roc-ray,rr,github
 ostcar/kingfisher,webserver,github
 roc-lang/basic-cli,cli,github
 roc-lang/basic-webserver,web,github
