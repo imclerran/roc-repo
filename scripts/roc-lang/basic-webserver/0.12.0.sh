@@ -33,6 +33,12 @@ done
 cat >> "$file_name" << EOL
 }
 
+# =========================================================
+# IMPORTANT! This version of roc-start is deprecated.
+# To continue recieving script (plugin) updates, please
+# update to the latest version of roc-start.
+# =========================================================
+
 import ${platform_alias}.Stdout
 import ${platform_alias}.Http exposing [Request, Response]
 import ${platform_alias}.Utc
