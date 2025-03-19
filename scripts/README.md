@@ -1,2 +1,2 @@
 # DEPRECATED
-This remains to provide support for older versions of roc-start which depend on the scripts folder, but has been replaced by the `plugins` directory and will be removed eventually. New plugins will not be added to the scripts directory. To get the latest plugins, update to roc-start version >= `v0.7.1`, and run `roc-start update --plugins`.
+This remains to provide support for older versions of roc-start which depend on the scripts folder url, but has been replaced by the `plugins` directory and will be removed eventually. New plugins will not be added to the scripts directory. To get the latest plugins, update to roc-start version >= `v0.7.1`, and run `roc-start update --plugins`.
