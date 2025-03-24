@@ -14,7 +14,7 @@ hristog/roc-tools,tools,github
 imclerran/roc-ai,ai,github
 imclerran/roc-asciiart,art,github
 imclerran/roc-heck,heck,github
-imclerran/roc-isodate,iso,github
+imclerran/roc-isodate,dt,github
 imclerran/roc-reduce,reduce,github
 imclerran/roc-sort,sort,github
 imclerran/roc-tinyparse,parse,github
