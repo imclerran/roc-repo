@@ -2,6 +2,7 @@ repo,alias,remote
 adomurad/r2e,r2e,github
 adomurad/roc-base64,base64,github
 agu-z/roc-pg,pg,github
+Enkidatron/roc-json-value,jv,github
 hasnep/roc-ascii,ascii,github
 hasnep/roc-datetimes,dt,github
 hasnep/roc-hex,hex,github
