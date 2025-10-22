@@ -2,6 +2,7 @@ repo,alias,remote
 adomurad/r2e,r2e,github
 adomurad/roc-base64,base64,github
 agu-z/roc-pg,pg,github
+bhansconnect/roc-msgpack,msgpack,github
 Enkidatron/roc-json-value,jv,github
 hasnep/roc-ascii,ascii,github
 hasnep/roc-datetimes,dt,github
@@ -35,12 +36,15 @@ lukewilliamboswell/roc-ansi,ansi,github
 lukewilliamboswell/roc-glue-code-gen,glue,github
 lukewilliamboswell/roc-json,json,github
 lukewilliamboswell/roc-parser,parser,github
+lukewilliamboswell/roc-pga2d,pga2d,github
 lukewilliamboswell/roc-random,random,github
 mulias/roc-array2d,a2d,github
 phagenlocher/roc-color,color,github
+quelgar/roc-utils,utils,github
 roc-lang/unicode,unicode,github
 shritesh/roc-image,img,github
 smores56/roc-query,qry,github
 smores56/roc-semver,semver,github
 smores56/weaver,weaver,github
 Subtlesplendor/roc-data,data,github
+Subtlesplendor/realm-parser,realm,github
