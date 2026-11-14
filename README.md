@@ -1,3 +1,5 @@
+This repository serves roc-start v0.7.x and earlier, which targeted the legacy Rust-based Roc compiler. Packages and platforms for the new compiler live in [roc-start-registry](https://github.com/imclerran/roc-start-registry).
+
 # Roc-repo : the official repository for `roc-start`
 
 This is the repository of packages, platforms, and plugins for the `roc-start` CLI tool. To get your package or platform listed in `roc-start`, simply make sure that you have a release of your package or platform which is tagged with a __valid semver_ version identifier, and then make a pull against this repository, adding your repository to either the `package.csv` file, or `platforms.csv`. The format is:
